@@ -4,6 +4,160 @@
     box-sizing: border-box;
 }
 
+/* General */
 body{
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: #808080;
+}
+
+ul{
+    list-style: none;
+}
+
+.uppercase-bold{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+/* Navbar */
+
+.navbar-small{
+    background-color: black;
+    width: 4rem;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.navbar-small .icon{
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.navbar-small .nav-bottom{
+    padding: 1rem;
+}
+
+.navbar-small .nav-bottom a img{
+    width: 80%;
+    margin: 3rem auto;
+    display: block;
+}
+
+.navbar-small .nav-bottom .user{
+    border-radius: 50%;
+    background-color: #808080;
+    padding: .4rem;
+    width: 3rem;
+    aspect-ratio: 1 / 1;
+    margin: 0 -.5rem 2rem;
+    cursor: pointer;
+}
+
+.navbar-big{
+    background-color: black;
+    width: 230px;
+    padding: 1.5rem;
+    color: #808080;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.navbar-big .logo{
+    padding: 0 1rem 1.5rem;
+}
+
+.navbar-big .options img{
+    width: 2rem;
+    vertical-align: bottom;
+}
+
+.navbar-big .options span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar-big .options li{
+    margin: 0 0 .5rem;
+}
+
+.navbar-big h2{
+    margin-top: 2rem;
+    color: white;
+}
+
+.navbar-big .new-playlist-btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.navbar-big .new-playlist-btn .plus{
+    display: block;
+    background-color: #808080;
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    color: white;
+}
+
+.navbar-big .new-playlist-btn .plus i{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.navbar-big .playlist li{
+    margin: 1rem 0;
+}
+
+.navbar-big .install{
+    display: flex;
+}
+
+.navbar-big .install img{
+    width: 20px;
+    margin-right: 2rem;
+}
+
+.navbar-big .user{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #808080;
+}
+
+.navbar-big .user img{
+    width: 50px;
+    border-radius: 50%;
+    padding: .3rem;
+    background-color: #808080;
+    margin: 1rem 2rem 0 0;
+}
+
+.navbar-big .user .name{
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+@media (min-width: 639px) {
+    .navbar-big{
+        display: flex;
+    }
+
+    .navbar-small{
+        display: none;
+    }
 }
