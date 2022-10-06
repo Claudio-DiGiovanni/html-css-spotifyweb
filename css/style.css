@@ -8,6 +8,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    display: flex;
 }
 a{
     text-decoration: none;
@@ -23,13 +24,19 @@ ul{
     text-transform: uppercase;
 }
 
+.circle{
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: .5rem;
+}
+
 
 /* Navbar */
 
 .navbar-small{
     background-color: black;
     width: 4rem;
-    height: 100vh;
+    height: calc(100vh - 90px);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -62,13 +69,13 @@ ul{
 
 .navbar-big{
     background-color: black;
-    width: 230px;
+    width: 255px;
     padding: 1.5rem;
     color: #808080;
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    height: calc(100vh - 90px);
 }
 
 .navbar-big .logo{
@@ -152,6 +159,8 @@ ul{
     font-weight: 800;
 }
 
+
+
 @media (min-width: 639px) {
     .navbar-big{
         display: flex;
@@ -160,4 +169,127 @@ ul{
     .navbar-small{
         display: none;
     }
+}
+
+/* Player */
+
+#player{
+    width: 100%;
+    height: 90px;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 0;
+}
+
+.song{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    flex: 0 1 0;
+}
+
+.song img{
+    width: 60px;
+    display: block;
+}
+
+.info-song{
+    margin: 0 2rem;
+}
+
+.info-song span{
+    display: block;
+}
+
+.song-name{
+    color: white;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.album-name{
+    color: #808080;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.song .icons{
+    display: flex;
+    gap: 1rem;
+   
+}
+
+.song .icons i{
+    display: block;
+    color: #808080;
+    font-size: 18px;
+    
+}
+
+.player{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 1 100%;
+}
+
+.player .icons{
+    color: white;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+
+.player .slider{
+    margin-top: 1rem;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bar{
+    flex: 1 1 200px;
+    max-width: 600px;
+    min-width: 200px;
+    height: 0;
+    border: 3px solid #5a5a5a;
+    border-radius: 5px;
+    
+}
+
+.controls{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 18px;
+}
+
+.controls .bar{
+    min-width: 100px;
+    max-width: 200px;
+    margin-right: 1rem;
+}
+
+
+.content{
+    background-color: #141922;
+    width: calc(100% - 4rem);
+    height: calc(100vh - 90px);
 }
