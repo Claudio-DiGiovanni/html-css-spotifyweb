@@ -83,6 +83,9 @@ ul{
 .navbar-big .logo{
     padding: 0 1rem 1.5rem;
 }
+.navbar-big .nav-top{
+    overflow: hidden;
+}
 
 .navbar-big .options img{
     width: 2rem;
@@ -192,12 +195,13 @@ ul{
     z-index: 20;
 }
 
+
 .song{
     height: 100%;
     display: flex;
     align-items: center;
     margin-left: 2rem;
-    flex: 0 1 0;
+    flex: 0 1 auto;
 }
 
 .song img{
@@ -206,7 +210,7 @@ ul{
 }
 
 .info-song{
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 
 .info-song span{
@@ -222,7 +226,7 @@ ul{
 .album-name{
     color: #808080;
     font-size: 14px;
-    white-space: nowrap;
+    white-space: wrap;
 }
 
 .song .icons{
@@ -237,6 +241,31 @@ ul{
     font-size: 18px;
     
 }
+
+@media (max-width:750px) {
+    .album-name{
+        font-size: 10px;
+    }
+    .song-name{
+        font-size: 14px;
+    }
+    .info-song{
+        margin: 0 .3rem;
+    }
+    .song{
+        margin: 0 .3rem;
+        transform: scalex(.8);
+        position: relative;
+        left: -1rem;
+    }
+
+}
+
+@media (max-width:1000px) {
+    .song .icons{
+        flex-direction: column;
+    }
+    }
 
 .player{
     height: 100%;
@@ -258,6 +287,10 @@ ul{
     justify-content: center;
 }
 
+i:hover{
+    transform: scale(1.5);
+}
+
 
 
 .player .slider{
@@ -277,8 +310,45 @@ ul{
     height: 0;
     border: 3px solid #5a5a5a;
     border-radius: 5px;
+    position: relative;
+    background-color: #5a5a5a;
     
 }
+
+.bar-light{
+    width: 25%;
+    height: 0;
+    border: 3px solid #8c8c8c;
+    border-radius: 5px;
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    background-color: #8c8c8c;
+}
+
+.point{
+    border: 8px solid #8c8c8c;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    left: 100%;
+    background-color: #8c8c8c;
+}
+
+.bar:hover .point{
+    transform: scale(1.5);
+    transition: .5s;
+    border-color: white;
+    background-color: white;
+}
+
+.bar:hover .bar-light{
+    transition: .5s;
+    border-color: white;
+    background-color: white;
+}
+
+
 
 .controls{
     color: white;
@@ -293,6 +363,25 @@ ul{
     max-width: 200px;
     margin-right: 1rem;
 }
+
+@media (max-width:750px) {
+    .player .icons{
+        font-size: 1rem;
+    }
+    .slider{
+        transform: scaleX(.6);
+    }
+    .player{
+        position: relative;
+        left: -6rem;
+    }
+    .controls{
+        transform: scale(.8);
+        position: relative;
+        left: -13rem;
+    }
+}
+
 
 /* Main-content */
 
@@ -334,7 +423,7 @@ ul{
 }
 
 .content nav{
-    height: 2rem;
+   
     display: flex;
     font-weight: 700;
     gap: 1rem;
