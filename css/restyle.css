@@ -162,8 +162,8 @@ main{
     background-color: black;
     width: 100%;
     padding: 2rem 1rem;
-    overflow-y: scroll;
-    height: 50vh;
+    
+    
 }
 
 .container.recently{
@@ -219,6 +219,7 @@ main{
     display: flex;
     gap: 1.5rem;
     overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 a:hover{
@@ -235,8 +236,108 @@ a:hover{
 .player{
     width: calc(30% - 1rem);
     background-color: #282729;
-    height: 100vh;
+    height: 95vh;
     border-radius: 20px;
     margin: 1rem 0;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
+.btn-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.player a{
+    color: white;
+}
+
+.btn{
+    background-color: #808080;
+    border-radius: 20px;
+    padding: .5rem;
+    color: white;
+}
+
+.player h2{
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.player img{
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.info-song{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.time{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.time span{
+    margin: 0 1rem;
+}
+
+.bar{
+    background-color: #808080;
+    height: 5px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.bar-light{
+    background-color: white;
+    height: 5px;
+    border-radius: 5px;
+    width: 25%;
+    position: relative;
+}
+
+.point{
+    border: 8px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: 0;
+}
+
+.controls{
+    color: white;
+    display: flex;
+    gap: 2rem;
+    font-size: 3rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.controls i:hover{
+    transform: scale(1.4);
+}
+
+.btn-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin: 12rem 1rem;
+}
+
+.text{
+    color: #808080;
+    background-color: rgba(0, 0, 0, .75);
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 15rem;
+    text-align: center;
+}
