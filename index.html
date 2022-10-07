@@ -7,7 +7,8 @@
     <title>Spotify</title>
 
     <!-- Style -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/restyle.css">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +22,7 @@
 </head>
 <body>
     <!-- Sidebar -->
-    <div class="navbar-small">
+    <!-- <div class="navbar-small">
         <div class="nav-top">
             <div class="icon">
                 <img src="img/logo-small.svg" alt="logo">
@@ -42,9 +43,9 @@
                 <img src="img/profile.svg" alt="user">
             </div>
         </div>    
-    </div>
+    </div> -->
 
-    <div class="navbar-big">
+    <!-- <div class="navbar-big">
         <div class="nav-top">
             <div class="logo">
                 <img src="img/logo.svg">
@@ -82,10 +83,10 @@
                 <span class="name">John Doe</span>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Player -->
-    <div id="player">
+    <!-- <div id="player">
         <div class="song">
             <img src="img/sinister.jpeg">
             <div class="info-song">
@@ -123,10 +124,10 @@
                 <div class="point"></div>
             </div></div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Content -->
-    <div class="overlay">
+    <!-- <div class="overlay">
         <a href="#" class="btn">EFFETTUA L'UPGRADE</a>
     </div>
     <main class="content">
@@ -205,6 +206,91 @@
                 <span class="title">Pallo Pinco</span>
             </div>
         </div>
-    </main>
+    </main> -->
+    <div class="content">
+        <header>
+            <nav>
+                <ul>
+                    <li><a class="bold" href="#"><img src="img/home.svg"> Home</a></li>
+                    <li><a class="bold" href="#"><img src="img/search.svg"> Esplora</a></li>
+                    <li><a class="bold" href="#"><img src="img/libreria.svg"> Playlist</a></li>
+                </ul>
+                <input type="search" placeholder="Cerca">
+                <div class="user">
+                    <img src="img/profile.svg" alt="">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </nav>
+            <div class="container head">
+                <div class="card blue">
+                    <img src="img/cure.jpeg">
+                    <h2>Wellness</h2>
+                </div>
+                <div class="card pink">
+                    <img src="img/mixdaily.jpeg">
+                    <h2>Daily Mix 1</h2>
+                </div>
+                <div class="card green">
+                    <img src="img/radar.jpeg">
+                    <h2>Radar</h2>
+                </div>
+            </div>    
+        </header>
+        <main>
+            <div class="container recently">
+                <h2 class="bold">Ascoltati di recente</h2>
+                <div class="card">
+                    <img src="img/metal_lifting.jpg">
+                    <span class="type"><i class="fa-solid fa-bars-staggered"></i> playlist</span>
+                    <span class="artist">Artisti vari</span>
+                    <span class="title">Heavy Metal</span>
+                </div>
+                <div class="card">
+                    <img class="round" src="img/einaudi.jpeg">
+                    <span class="type"><i class="fa-regular fa-user"></i> Artista</span>
+                    <span class="artist"></span>
+                    <span class="title">Einaudi</span>
+                </div>
+                <div class="card">
+                    <img src="img/sinister.jpeg">
+                    <span class="type"><i class="fa-solid fa-compact-disc"></i> Album</span>
+                    <span class="artist">Christopher Young</span>
+                    <span class="title">Sinister</span>
+                </div>
+                <div class="card">
+                    <img src="img/split.jpeg">
+                    <span class="type"><i class="fa-solid fa-bars-staggered"></i> playlist</span>
+                    <span class="artist">Artisti vari</span>
+                    <span class="title">Happy Mood</span>
+                </div>
+                <div class="card">
+                    <img class="round" src="img/youg.jpeg">
+                    <span class="type"><i class="fa-regular fa-user"></i> Artista</span>
+                    <span class="artist"></span>
+                    <span class="title">Heavy Metal</span>
+                </div>
+                
+            </div>
+
+            <div class="container playlist">
+                <h2 class="bold">Playlist Suggerite</h2>
+                <div class="container-playlist">
+                    <div class="card pink">
+                        <img src="img/mixdaily.jpeg">
+                        <h2>Daily Mix 1</h2>
+                    </div>
+                    <div class="card green">
+                        <img src="img/radar.jpeg">
+                        <h2>Release Radar</h2>
+                    </div>
+                    <div class="card blue">
+                        <img src="img/aquietplace.jpeg">
+                        <h2>Heavy Metal</h2>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="player"></div>
 </body>
 </html>
